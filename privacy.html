@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spotter — Privacy Policy</title>
+<style>
+  :root{--bg:#0B0D0E;--surface:#141819;--ink:#EAEEEF;--muted:#8E999D;--teal:#00C9D6;--hairline:rgba(150,165,170,.16)}
+  @media (prefers-color-scheme: light){:root{--bg:#F1F4F4;--surface:#FFFFFF;--ink:#161B1D;--muted:#5C6669;--teal:#008E9B;--hairline:rgba(20,45,50,.14)}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  main{max-width:680px;margin:0 auto;padding:48px 22px 80px}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:650}
+  h1{font-size:32px;letter-spacing:-.02em;margin:10px 0 4px}
+  .updated{color:var(--muted);font-size:14px;margin-bottom:28px}
+  h2{font-size:19px;letter-spacing:-.01em;margin:34px 0 8px}
+  p,li{font-size:15.5px;color:var(--ink)}
+  li{margin:6px 0}
+  .lede{font-size:17px;color:var(--muted)}
+  .card{background:var(--surface);border:1px solid var(--hairline);border-radius:14px;padding:18px 20px;margin:22px 0}
+  .card b{display:block;margin-bottom:4px}
+  .card p{margin:6px 0;color:var(--muted);font-size:14.5px}
+  a{color:var(--teal)}
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--hairline);color:var(--muted);font-size:13px}
+  footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Spotter</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Effective 7 July 2026</p>
+
+  <p class="lede">Spotter is built so that your training data stays yours. There are no Spotter servers, no accounts with us, no analytics, no advertising, and no data sales. This page describes exactly what the app stores and where it goes.</p>
+
+  <div class="card">
+    <b>The short version</b>
+    <p>Everything you enter lives on your iPhone. If you sign in with Apple, the app backs your data up to <em>your own</em> private iCloud, which we cannot access. The AI coach runs entirely on your device. We collect nothing.</p>
+  </div>
+
+  <h2>Data the app stores, and where</h2>
+  <ul>
+    <li><b>Profile</b> — an optional first name, body weight, units, training goal, experience level, schedule, equipment, and app preferences. Stored in a local database on your iPhone.</li>
+    <li><b>Training data</b> — your weekly plan, workout sessions, logged sets, and personal records. Stored in the same local database.</li>
+    <li><b>iCloud backup (optional)</b> — if you sign in with Apple, the app saves a snapshot of that database to the <em>private CloudKit database of your own iCloud account</em>, so you can restore after reinstalling or on a new phone. Apple's architecture makes this database readable only by you: the developer has no server and no ability to read, receive, or process it.</li>
+    <li><b>Sign in with Apple</b> — the app keeps only the opaque identifier Apple issues for your Apple ID, stored in the device keychain. It is used to key your iCloud backup, nothing else. We never see your email address; the app doesn't request it.</li>
+  </ul>
+
+  <h2>Apple Health (opt-in, off by default)</h2>
+  <ul>
+    <li><b>Workouts</b> — if you enable it, finished workouts are written to Apple Health so they count toward your activity.</li>
+    <li><b>Body weight</b> — if you enable it, the app reads your most recent body-weight sample to tune weight suggestions. This value is held in memory only: it is never written to the app's database, never synced to iCloud, and never leaves your device. Health data is governed by your permissions in the Health app and can be revoked there at any time.</li>
+  </ul>
+
+  <h2>The AI coach</h2>
+  <p>All coaching — plan generation, workout reviews, chat — runs on-device using Apple's built-in foundation model (Apple Intelligence). Your questions, plans, and training history are processed on your iPhone and are not sent to us or to any third-party AI service. The coach works in airplane mode. It offers general training guidance, not medical advice.</p>
+
+  <h2>Network requests</h2>
+  <p>The app makes one kind of outbound request: exercise demonstration photos are loaded over HTTPS from a public content-delivery network (jsDelivr) hosting the open-source <a href="https://github.com/yuhonas/free-exercise-db">free-exercise-db</a> dataset. As with any web request, the CDN sees your IP address in order to serve the image; no account data or training data is included. Images are cached on-device, so repeated views work offline.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No analytics or crash-reporting SDKs.</li>
+    <li>No advertising and no tracking of any kind.</li>
+    <li>No selling, sharing, or transferring of your data to anyone.</li>
+    <li>No Spotter servers — there is nothing for us to collect your data onto.</li>
+  </ul>
+
+  <h2>Export and deletion</h2>
+  <ul>
+    <li><b>Export</b> — Account → Export data produces a complete JSON copy of your data, shared via the iOS share sheet.</li>
+    <li><b>Delete</b> — Account → Delete account removes the iCloud snapshot from your iCloud, signs you out, and erases all local data. Reset data erases local data only. Both are immediate and irreversible. You can also detach the app from your Apple ID under iOS Settings → Apple ID → Sign-In &amp; Security → Sign in with Apple.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Spotter is not directed at children, and we do not knowingly collect information from anyone — child or adult.</p>
+
+  <h2>Changes</h2>
+  <p>If the app's data practices ever change, this page will be updated and the effective date revised before the change ships.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="mailto:jici.liu@hotmail.com">jici.liu@hotmail.com</a></p>
+
+  <footer>
+    <a href="./index.html">Spotter</a>
+    <a href="./support.html">Support</a>
+    <span>© 2026 JLJC</span>
+  </footer>
+</main>
+</body>
+</html>

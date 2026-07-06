@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spotter — Support</title>
+<style>
+  :root{--bg:#0B0D0E;--surface:#141819;--ink:#EAEEEF;--muted:#8E999D;--teal:#00C9D6;--hairline:rgba(150,165,170,.16)}
+  @media (prefers-color-scheme: light){:root{--bg:#F1F4F4;--surface:#FFFFFF;--ink:#161B1D;--muted:#5C6669;--teal:#008E9B;--hairline:rgba(20,45,50,.14)}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  main{max-width:680px;margin:0 auto;padding:48px 22px 80px}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:650}
+  h1{font-size:32px;letter-spacing:-.02em;margin:10px 0 24px}
+  h2{font-size:19px;letter-spacing:-.01em;margin:34px 0 8px}
+  p,li{font-size:15.5px}
+  li{margin:6px 0}
+  .card{background:var(--surface);border:1px solid var(--hairline);border-radius:14px;padding:18px 20px;margin:22px 0}
+  .card p{margin:6px 0}
+  a{color:var(--teal)}
+  .faq b{display:block;margin-top:18px}
+  .faq p{color:var(--muted);margin:4px 0 0;font-size:14.5px}
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--hairline);color:var(--muted);font-size:13px}
+  footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Spotter</div>
+  <h1>Support</h1>
+
+  <div class="card">
+    <p><b>Get in touch:</b> <a href="mailto:jici.liu@hotmail.com">jici.liu@hotmail.com</a></p>
+    <p>Include your iOS version and what you were doing when the problem occurred. Because Spotter keeps no servers and no analytics, your report is the only way we learn about a bug — every email is read.</p>
+  </div>
+
+  <h2>Frequently asked</h2>
+  <div class="faq">
+    <b>Why don't I see the AI coach?</b>
+    <p>AI coaching requires an iPhone with Apple Intelligence (iOS 26 or later) with Apple Intelligence turned on in Settings. On other devices, everything else — planning, logging, progress — works fully; the AI surfaces hide themselves.</p>
+
+    <b>Does the app work offline?</b>
+    <p>Yes, entirely — including the AI coach. Exercise photos need one online view to cache; after that they're available offline.</p>
+
+    <b>Where is my data?</b>
+    <p>On your iPhone, and — if you signed in with Apple — in your own private iCloud. See the <a href="./privacy.html">privacy policy</a> for the complete picture.</p>
+
+    <b>How do I move to a new iPhone?</b>
+    <p>Sign in with Apple on the new phone during setup and choose the restore option — your plan and history come down from your iCloud. Always update the app in place rather than deleting it.</p>
+
+    <b>How do I export or delete my data?</b>
+    <p>Account → Export data gives you a JSON copy. Account → Delete account erases everything, including the iCloud backup.</p>
+
+    <b>Why does a weight suggestion look rounded?</b>
+    <p>Suggestions snap to your increment setting and the plates you own (Profile → Equipment). Weights are computed by transparent rules from your history — the AI never invents numbers.</p>
+
+    <b>The rest timer on the Lock Screen hit 0:00 but didn't update.</b>
+    <p>Known iOS limitation when rest expires while the app is backgrounded — the countdown is correct when you return to the app or unlock. The +30s and Skip buttons always act on your real timer.</p>
+  </div>
+
+  <footer>
+    <a href="./index.html">Spotter</a>
+    <a href="./privacy.html">Privacy Policy</a>
+    <span>© 2026 JLJC</span>
+  </footer>
+</main>
+</body>
+</html>
